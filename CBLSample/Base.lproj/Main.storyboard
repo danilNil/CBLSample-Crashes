@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="6HJ-3F-DbZ">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Ivp-Ty-0jj">
+            <objects>
+                <navigationController id="6HJ-3F-DbZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="C9f-HR-nzP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="hCN-aA-4zs"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lep-bG-Xsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-298" y="186"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8x1-ib-MQ3">
+                                <rect key="frame" x="118" y="86" width="365" height="128"/>
+                                <state key="normal">
+                                    <string key="title">Case 1 Your code reads the document's current properties, and constructs a modified copy to save
+</string>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="uhC-Hl-UPZ" kind="show" id="NIq-ak-klw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aHx-jN-Hvy">
+                                <rect key="frame" x="118" y="504" width="48" height="30"/>
+                                <state key="normal" title="Case 3">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="giL-Gy-e1c" kind="show" id="bt3-Jx-N0U"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WjD-AH-uht">
+                                <rect key="frame" x="108" y="222" width="384" height="129"/>
+                                <state key="normal">
+                                    <string key="title">Case 2 Another thread (perhaps the replicator) updates the document, creating a new revision with different properties
+</string>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pTh-0E-d4W" kind="show" id="Efz-IB-cPY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="UaR-pG-mM2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="436" y="198"/>
+        </scene>
+        <!--Case1 View Controller-->
+        <scene sceneID="Oa3-En-GmI">
+            <objects>
+                <viewController id="uhC-Hl-UPZ" customClass="Case1ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N85-Vr-4Kw"/>
+                        <viewControllerLayoutGuide type="bottom" id="fh9-OY-wQ0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BEg-Bl-HfF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fk8-HB-dqJ">
+                                <rect key="frame" x="244" y="337" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="VTb-Mc-taO"/>
+                                    <action selector="start:" destination="uhC-Hl-UPZ" eventType="touchUpInside" id="cpu-au-PCq"/>
+                                    <action selector="startAgain:" destination="uhC-Hl-UPZ" eventType="touchUpInside" id="dV3-dn-uvg"/>
+                                    <action selector="startAgain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="tYF-i1-3G9"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ksi-rE-YON" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1114" y="-21"/>
+        </scene>
+        <!--Case2 View Controller-->
+        <scene sceneID="HDG-7J-WLH">
+            <objects>
+                <viewController id="pTh-0E-d4W" customClass="Case2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sHD-Bd-oWi"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZTp-SE-CkU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4Cv-Qu-EpS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="80F-0q-30a">
+                                <rect key="frame" x="250" y="142" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="6kS-R9-xcl"/>
+                                    <action selector="start:" destination="pTh-0E-d4W" eventType="touchUpInside" id="6wD-ax-CgE"/>
+                                    <action selector="startAgain:" destination="pTh-0E-d4W" eventType="touchUpInside" id="GcT-hd-BI9"/>
+                                    <action selector="startAgain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="QoO-KN-Q1O"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qk0-Ax-7UM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1202" y="643"/>
+        </scene>
+        <!--Case3 View Controller-->
+        <scene sceneID="AWi-hu-OK9">
+            <objects>
+                <viewController id="giL-Gy-e1c" customClass="Case3ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HxH-pQ-eNy"/>
+                        <viewControllerLayoutGuide type="bottom" id="wyh-UX-ZtD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HhK-LG-Xzq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qaU-vR-3vC">
+                                <rect key="frame" x="543" y="158" width="33" height="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="start:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="thi-Ru-8fu"/>
+                                    <action selector="startAgain:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="D7u-ao-i5l"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a9i-CV-f7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="923"/>
+        </scene>
+    </scenes>
+</document>
